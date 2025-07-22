@@ -1,0 +1,55 @@
+menuconfig BLUESYNC_SUPPORT
+	bool "BlueSync support"
+	default n
+	help
+	  Enables support for the BlueSync time synchronization algorithm over BLE.
+
+if BLUESYNC_SUPPORT
+
+module = BLUESYNC
+module-str = BLUESYNC
+source "subsys/logging/Kconfig.template.log_config"
+
+config BLUESYNC_USED_IN_MESH
+	bool "Use BlueSync in BLE Mesh mode"
+	default y
+	help
+	  Enable synchronization within a BLE Mesh network context.
+
+config BLUESYNC_THREAD_STACK_SIZE
+	hex "BlueSync thread stack size"
+	default 0x800
+	help
+	  Stack size (in bytes) for the internal BlueSync worker thread.
+
+config BLUESYNC_THREAD_PRIORITY
+	int "BlueSync thread priority"
+	default 5
+	help
+	  Priority of the BlueSync worker thread.
+
+config BLUESYNC_ADV_INT_MS
+	int "Burst packet interval (ms)"
+	default 200
+	help
+	  Interval in milliseconds between packets in a burst.
+
+config BLUESYNC_SLOTS_IN_BURST
+	int "Timeslots per burst"
+	default 16
+	help
+	  Number of synchronization packets sent in each burst.
+
+config BLUESYNC_BURST_WINDOWS_SIZE
+	int "Number of bursts used for regression"
+	default 4
+	help
+	  Number of past bursts to use for slope/offset estimation using linear regression.
+
+config BLUESYNC_TEST_BABBLESIM_SUPPORT
+	bool "Enable BabbleSim support"
+	default n
+	help
+	  Enable BlueSync test mode for simulation in BabbleSim.
+
+endif # BLUESYNC_SUPPORT

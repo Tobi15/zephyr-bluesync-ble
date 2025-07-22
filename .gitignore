@@ -13,7 +13,6 @@ Makefile
 _compile_commands.json
 
 # Zephyr-generated files
-zephyr/
 modules/
 twister-out/
 
