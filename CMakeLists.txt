@@ -10,4 +10,4 @@ zephyr_library_sources(
 zephyr_include_directories(include)
 
 # Conditionally add test directories based on Kconfig
-zephyr_library_sources_ifdef(CONFIG_BLUESYNC_TEST_BABBLESIM_SUPPORT statistic/bluesync_statistic_bsim.c)
+zephyr_library_sources_ifdef(CONFIG_BLUESYNC_TEST_BABBLESIM_SUPPORT src/statistic/bluesync_statistic_bsim.c)
