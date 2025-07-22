@@ -1,0 +1,4 @@
+name: bluesync
+build:
+  cmake: .
+  kconfig: zephyr/Kconfig

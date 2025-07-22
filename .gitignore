@@ -1,0 +1,40 @@
+# Ignore user-specific IDE configs
+.vscode/
+
+# Build outputs
+build/
+build-*/
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+_compile_commands.json
+
+# Zephyr-generated files
+zephyr/
+modules/
+twister-out/
+
+# Backup and temporary files
+*.swp
+*.swo
+*.orig
+*.bak
+*.tmp
+*~
+
+# Logs
+*.log
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# macOS and Linux clutter
+.DS_Store
+.idea/
+.cache/

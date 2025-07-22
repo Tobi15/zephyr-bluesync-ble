@@ -1,0 +1,16 @@
+BlueSync - BLE Time Synchronization Module for Zephyr
+Copyright 2025 Tobias Moullet 
+
+This software is licensed under the Apache License, Version 2.0.
+See the LICENSE file for details.
+
+This module implements a BLE-based time synchronization mechanism inspired by
+concepts from academic literature, including the "BlueSync" protocol.
+
+No third-party code is included in this repository.
+
+Contributions are welcome. By submitting a pull request, you agree that your
+contribution will be licensed under the Apache 2.0 License.
+
+Project Repository:
+https://github.com/Tobi15/zephyr-bluesync-ble
