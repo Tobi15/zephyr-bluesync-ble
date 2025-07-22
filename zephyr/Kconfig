@@ -1,4 +1,4 @@
-menuconfig BLUESYNC_SUPPORT
+config BLUESYNC_SUPPORT
 	bool "BlueSync support"
 	default n
 	help
