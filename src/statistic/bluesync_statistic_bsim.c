@@ -24,8 +24,10 @@
 
 #include <zephyr/kernel.h>
 
-#include "posix_native_task.h"
-#include "bsim_args_runner.h"
+#include <posix_native_task.h>
+//#include "posix_native_task.h"
+#include <bsim_args_runner.h>
+//#include "bsim_args_runner.h"
 
 #include <stdio.h>
 #include <string.h>

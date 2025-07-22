@@ -10,24 +10,26 @@
  * @date   : 10.12.2024
  ********************************************************************************/
 
+#include <zephyr/kernel.h>
 #include <zephyr/bluetooth/bluetooth.h>
 #include <zephyr/bluetooth/hci.h>
 #include <zephyr/bluetooth/mesh.h>
 #include <zephyr/sys/byteorder.h>
 #include <zephyr/sys/util.h>
-#include "local_time.h"
+
 #include <math.h>
 
-#include <zephyr/kernel.h>
 #include <zephyr/sys/util.h>
 
 #if defined(CONFIG_BLUESYNC_USED_IN_MESH)
 #include <zephyr/bluetooth/mesh.h>
 #endif
 
+#include <bluesync/bluesync.h>
 #include "bluesync.h"
 #include "bs_state_machine.h"
 #include "bluesync_bitfields.h"
+#include "local_time.h"
 
 
 #if defined(CONFIG_BLUESYNC_TEST_BABBLESIM_SUPPORT)

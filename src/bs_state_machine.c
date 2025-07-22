@@ -22,6 +22,7 @@
 #include <zephyr/kernel.h>
 #include <zephyr/logging/log.h>
 
+#include <bluesync/bluesync.h>
 #include "bluesync.h"
 #include "bs_state_machine.h"
 
