@@ -54,7 +54,7 @@ In your Zephyr workspace `west.yml`, add:
 ```yaml
 - name: bluesync
   path: modules/bluesync
-  url: https://github.com/yourname/zephyr-bluesync
+  url: https://github.com/Tobi15/zephyr-bluesync
   revision: main
 ```
 
