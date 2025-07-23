@@ -111,9 +111,18 @@ static void reset_bluesync_timestamps(bluesync_timestamps_t *elem){
 	memset(&elem->timer_ticks, 0, sizeof(elem->timer_ticks));
 }
 
-static void add_bluesync_timestamps(bluesync_timestamps_t *elem, uint8_t pos, int64_t ticks){//, uint64_t est_ticks){
+static void add_bluesync_timestamps(bluesync_timestamps_t *elem,
+									uint8_t pos, 
+									int64_t ticks, 
+#if defined(CONFIG_BLUESYNC_TEST_BABBLESIM_SUPPORT)
+									uint64_t est_ticks
+#endif
+									)
+{
 	elem->timer_ticks[pos] = ticks;
-	//elem->remote_est_ticks[pos] = est_ticks;
+#if defined(CONFIG_BLUESYNC_TEST_BABBLESIM_SUPPORT)
+	elem->remote_est_ticks[pos] = est_ticks;
+#endif
 	set_bit(&elem->bitfield[0], (size_t)pos);
 }
 
@@ -206,6 +215,7 @@ static void bluesync_decode_msg(struct bluesync_msg_client *msg, struct net_buf_
 	msg->rcv.round_id = net_buf_simple_pull_u8(buf);
 	msg->rcv.index_timeslot = net_buf_simple_pull_u8(buf);
 	msg->rcv.master_timer_ticks = net_buf_simple_pull_le64(buf);
+	msg->master_estimation_ticks = get_logical_time_ticks();
 }
 
 static void bluesync_store_current_burst(){
@@ -308,7 +318,13 @@ static void bluesync_scan_packet_process(){
 	if(current_timeslot_idx >= 0  && current_timeslot_idx < SLOT_NUMBER){
 		k_mutex_lock(&param.local_mutex, K_FOREVER);
 		{
-			add_bluesync_timestamps(&param.local, current_timeslot_idx, msg.client_timer_ticks);// , msg.master_est_ticks);
+			add_bluesync_timestamps(&param.local 
+									, current_timeslot_idx 
+									, msg.client_timer_ticks
+#if defined(CONFIG_BLUESYNC_TEST_BABBLESIM_SUPPORT)
+									, msg.master_estimation_ticks
+#endif
+									);
 		}
 		k_mutex_unlock(&param.local_mutex);
 	}
@@ -317,7 +333,13 @@ static void bluesync_scan_packet_process(){
 	if(current_timeslot_idx >= 1  && current_timeslot_idx <= SLOT_NUMBER){
 		k_mutex_lock(&param.rcv_mutex, K_FOREVER);
 		{
-			add_bluesync_timestamps(&param.rcv, current_timeslot_idx-1, msg.rcv.master_timer_ticks);//, 0);
+			add_bluesync_timestamps(&param.rcv
+									, current_timeslot_idx-1
+									, msg.rcv.master_timer_ticks
+#if defined(CONFIG_BLUESYNC_TEST_BABBLESIM_SUPPORT)
+									, 0
+#endif														
+									);
 		}
 		k_mutex_unlock(&param.rcv_mutex);
 	}
@@ -611,9 +633,6 @@ void bluesync_thread_fnt(void *arg1, void *arg2, void *arg3)
 
 void bluesync_init(){
 	LOG_DBG("bluesync init");
-#if defined(CONFIG_BLUESYNC_TEST_BABBLESIM_SUPPORT)
-	bluesync_statistic_init();
-#endif
 
 	k_tid_t thread_id = k_thread_create(&param.bluesync_thread, bluesync_thread_stack,
                                       K_THREAD_STACK_SIZEOF(bluesync_thread_stack),

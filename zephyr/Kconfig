@@ -52,4 +52,13 @@ config BLUESYNC_TEST_BABBLESIM_SUPPORT
 	help
 	  Enable BlueSync test mode for simulation in BabbleSim.
 
+if BLUESYNC_TEST_BABBLESIM_SUPPORT
+
+config BLUESYNC_TEST_BABBLESIM_PATH
+	string "Path of the babblesim output file"
+	help
+	  Path where file of babble sim should be written
+
+endif
+
 endif # BLUESYNC_SUPPORT

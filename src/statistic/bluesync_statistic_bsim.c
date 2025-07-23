@@ -20,19 +20,24 @@
  * Repository: https://github.com/Tobi15/zephyr-bluesync-ble
  */
 
-#include "bluesync_statistic.h"
+
 
 #include <zephyr/kernel.h>
 
-#include <posix_native_task.h>
-//#include "posix_native_task.h"
-#include <bsim_args_runner.h>
-//#include "bsim_args_runner.h"
+//#include <posix_native_task.h>
+#include "posix_native_task.h"
+//#include <bsim_args_runner.h>
+#include "bsim_args_runner.h"
 
 #include <stdio.h>
 #include <string.h>
 
+#include "bluesync_statistic.h"
+#include "../bluesync_bitfields.h"
+
 #include <zephyr/logging/log.h>
+
+#include "synced_time_logger.h"
 
 LOG_MODULE_REGISTER(bluesync_statistic_bsim, CONFIG_BLUESYNC_LOG_LEVEL);
 
@@ -49,8 +54,23 @@ struct bluesync_msg_client_statistic {
 	uint8_t idx;
 	uint64_t master_timer_ticks;
 	uint64_t client_timer_ticks;
+	uint64_t estimation_master_ticks;
 	bool valid;
 };
+
+void bluesync_statistic_packet_status(struct bluesync_msg_client_statistic *packet_status){
+	k_mutex_lock(&node.mutex, K_FOREVER);
+	{
+		fprintf(node.file,
+			"%i" SEPARATION_TOKEN "%llu" SEPARATION_TOKEN "%llu" SEPARATION_TOKEN "%llu" SEPARATION_TOKEN "%u"
+			"\n",
+			packet_status->idx, packet_status->master_timer_ticks, packet_status->client_timer_ticks,
+			packet_status->estimation_master_ticks,
+			packet_status->valid);
+	}
+	k_mutex_unlock(&node.mutex);
+}
+
 
 void statistic_bluesync_status(bluesync_timestamps_t *elem_master, bluesync_timestamps_t *elem_slave, size_t size) {
 
@@ -64,6 +84,7 @@ void statistic_bluesync_status(bluesync_timestamps_t *elem_master, bluesync_time
 			.idx = i,
 			.master_timer_ticks = elem_master->timer_ticks[i],
 			.client_timer_ticks = elem_slave->timer_ticks[i],
+			.estimation_master_ticks = elem_slave->remote_est_ticks[i],
 			.valid = is_bit_set(result_bitfield, i),
 		};
 
@@ -79,7 +100,7 @@ static FILE *open_stat(char *filename, uint32_t device_number)
 	memset(path, 0, sizeof(path));
 
 	snprintf(path, sizeof(path) - 1,
-		 "/workdir/my-workspace-hbi/hbi-node/tests/time_sync/mesh_with_bluesync/bsim_utils/sim_output/%s_%i.csv", filename,
+		 "%s%s_%i.csv", CONFIG_BLUESYNC_TEST_BABBLESIM_PATH, filename,
 		 device_number);
 
 	fp = fopen(path, "w");
@@ -97,26 +118,19 @@ void bluesync_statistic_init()
 	node.file = open_stat("node_status", device_number);
 
 	fprintf(node.file, "timeslot_idx" SEPARATION_TOKEN "rcv_time" SEPARATION_TOKEN
-				   "local_time" SEPARATION_TOKEN "valid"
+				   "local_time" SEPARATION_TOKEN  "estimation_master" SEPARATION_TOKEN "valid"
 				   "\n");
+
+	synced_time_logger_init();
 }
 
-void bluesync_statistic_packet_status(struct bluesync_msg_client_statistic *packet_status){
-	k_mutex_lock(&node.mutex, K_FOREVER);
-	{
-		fprintf(node.file,
-			"%i" SEPARATION_TOKEN "%llu" SEPARATION_TOKEN "%llu" SEPARATION_TOKEN "%u"
-			"\n",
-			packet_status->idx, packet_status->master_timer_ticks, packet_status->client_timer_ticks,
-			packet_status->valid);
-	}
-	k_mutex_unlock(&node.mutex);
-}
 
 void bluesync_statistic_deinit()
 {
 	fclose(node.file);
+	synced_time_logger_deinit();
 }
 
+NATIVE_TASK(bluesync_statistic_init, BOOT, 101);
 /* Automatically close the opened files by calling hbi_api_gateway_deinit() */
 NATIVE_TASK(bluesync_statistic_deinit, ON_EXIT, 501);

@@ -50,7 +50,9 @@ typedef enum {
 typedef struct {
 	uint8_t bitfield[NB_BYTES_BITFIELD];
 	uint64_t timer_ticks[SLOT_NUMBER];
-	//uint64_t remote_est_ticks[SLOT_NUMBER];
+#if defined(CONFIG_BLUESYNC_TEST_BABBLESIM_SUPPORT)
+	uint64_t remote_est_ticks[SLOT_NUMBER];
+#endif
 } bluesync_timestamps_t;
 
 struct bluesync_param { 
@@ -122,6 +124,9 @@ struct bluesync_msg {
 struct bluesync_msg_client {
 	struct bluesync_msg rcv;
 	uint64_t client_timer_ticks;
+#if defined(CONFIG_BLUESYNC_TEST_BABBLESIM_SUPPORT)
+	uint64_t master_estimation_ticks;
+#endif
 };
 
 #endif /* TIME_SYNC_BLUESYNC_H_ */
