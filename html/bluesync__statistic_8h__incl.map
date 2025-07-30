@@ -1,0 +1,11 @@
+<map id="src/statistic/bluesync_statistic.h" name="src/statistic/bluesync_statistic.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="27,5,186,45"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="15,93,86,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,47,69,84,65,80,91,44"/>
+<area shape="rect" id="Node000003" href="$src_2bluesync_8h.html" title=" " alt="" coords="111,93,215,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="122,44,149,80,144,84,118,47"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,167,128,192"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="149,121,95,160,92,156,146,117"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="152,167,363,192"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="179,117,232,156,229,160,176,121"/>
+</map>
