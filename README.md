@@ -154,6 +154,4 @@ By submitting a pull request, you agree to license your contribution under Apach
 
 
 ## 📖 Documentation
-Detailed documentation is available in [`docs/`](./docs):
-- [Conception](docs/conception.md)
-- [Implementation](docs/implementation.md)
+Detailed documentation is available at this [`site`](https://tobi15.github.io/zephyr-bluesync-ble/)
