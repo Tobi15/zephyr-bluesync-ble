@@ -18,6 +18,9 @@ jobs:
       - name: Install Doxygen
         run: sudo apt-get install -y doxygen graphviz
 
+      - name: Create build/docs directory
+        run: mkdir -p build/docs
+
       - name: Generate Doxygen Docs
         run: doxygen Doxyfile
 
