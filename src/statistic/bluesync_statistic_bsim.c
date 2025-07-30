@@ -131,6 +131,7 @@ void bluesync_statistic_deinit()
 	synced_time_logger_deinit();
 }
 
+/* Automatically init the statistic if CONFIG_BLUESYNC_TEST_BABBLESIM_SUPPORT is enabled*/
 NATIVE_TASK(bluesync_statistic_init, BOOT, 101);
 /* Automatically close the opened files by calling hbi_api_gateway_deinit() */
 NATIVE_TASK(bluesync_statistic_deinit, ON_EXIT, 501);

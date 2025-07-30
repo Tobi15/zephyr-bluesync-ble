@@ -27,18 +27,29 @@
 
 #include "../bluesync.h"
 
-
+/**
+ * @brief Analyze and log synchronization statistics based on a series of timestamps.
+ *
+ * This function stores master and slave timestamp pairs into a CSV file.
+ *
+ * @param elem_master Pointer to the array of master timestamps.
+ * @param elem_slave  Pointer to the array of local timestamps captured by the slave.
+ * @param size        Number of timestamp pairs to process.
+ */
 void statistic_bluesync_status(bluesync_timestamps_t *elem_master, bluesync_timestamps_t *elem_slave, size_t size);
 
- /*
- * @brief Initialize the statistic for bluesync app
+/**
+ * @brief Initialize the BlueSync statistics module.
  *
+ * This should be called once at system startup or before beginning a series
+ * of synchronization evaluations. It opens needed files.
  */
 void bluesync_statistic_init();
 
 /**
- * @brief Deinitialize the statistic for bluesync app
+ * @brief Deinitialize the BlueSync statistics module.
  *
+ * This function cleans up and close files 
  */
 void  bluesync_statistic_deinit();
 

@@ -44,7 +44,7 @@ The design of BlueSync in Zephyr RTOS was driven by the need for an efficient, s
 ### Authority Node (Gateway)
 
 - `STOP`: Initial idle state.
-- `ADV`: Starts a sync round, increments `round_id`, advertises a sync packet, returns to `STOP`.
+- `ADV`: Starts a sync round, increments `round_id`, advertises a burst of sync packets, returns to `STOP`.
 
 ### Client Node (Sensor)
 

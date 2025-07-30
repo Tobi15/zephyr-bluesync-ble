@@ -27,14 +27,14 @@
 
 
 
-/*
- * @brief Initialize the statistic for bluesync app
+/**
+ * @brief Initialize the timer that store regularly timestamp of the node
  *
  */
 void synced_time_logger_init();
 
 /**
- * @brief Deinitialize the statistic for bluesync app
+ * @brief Deinitialize the timer that store regularly timestamp of the node
  *
  */
 void synced_time_logger_deinit();
