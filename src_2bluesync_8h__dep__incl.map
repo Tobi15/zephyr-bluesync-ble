@@ -1,0 +1,21 @@
+<map id="src/bluesync.h" name="src/bluesync.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="282,5,386,31"/>
+<area shape="rect" id="Node000002" href="$bluesync_8c.html" title=" " alt="" coords="184,175,288,201"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="289,41,264,58,244,80,235,105,232,131,236,175,231,175,227,131,230,103,239,78,260,54,286,36"/>
+<area shape="rect" id="Node000003" href="$bluesync__bitfields_8h.html" title=" " alt="" coords="24,86,179,112"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="285,39,138,88,137,83,283,34"/>
+<area shape="rect" id="Node000006" href="$bs__state__machine_8c.html" title=" " alt="" coords="525,175,684,201"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="401,23,514,42,564,57,582,67,596,77,609,101,614,129,610,175,605,174,608,129,604,103,592,81,580,71,562,62,513,48,401,29"/>
+<area shape="rect" id="Node000007" href="$bs__state__machine_8h.html" title=" " alt="" coords="254,86,413,112"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="336,47,336,86,331,86,331,47"/>
+<area shape="rect" id="Node000008" href="$bluesync__statistic_8h.html" title=" " alt="" coords="438,79,582,120"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="376,35,467,76,465,81,373,40"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="134,118,219,172,216,177,132,123"/>
+<area shape="rect" id="Node000004" href="$bluesync__bitfields_8c.html" title=" " alt="" coords="5,175,161,201"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="98,128,88,175,83,174,93,127"/>
+<area shape="rect" id="Node000005" href="$bluesync__statistic__bsim_8c.html" title=" " alt="" coords="342,168,486,208"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="161,114,344,165,342,170,160,119"/>
+<area shape="poly" id="edge8_Node000007_Node000002" title=" " alt="" coords="311,125,252,177,248,173,307,121"/>
+<area shape="poly" id="edge9_Node000007_Node000006" title=" " alt="" coords="387,115,567,172,566,177,386,120"/>
+<area shape="poly" id="edge11_Node000008_Node000005" title=" " alt="" coords="478,132,437,169,434,165,475,128"/>
+</map>

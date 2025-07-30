@@ -1,0 +1,14 @@
+<map id="src/bluesync_bitfields.c" name="src/bluesync_bitfields.c">
+<area shape="rect" id="Node000001" title=" " alt="" coords="40,5,195,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,226,113,252"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,33,93,54,79,80,69,114,63,150,61,211,55,211,58,149,64,113,74,78,88,51,105,30"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="88,79,147,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="120,31,120,63,115,63,115,31"/>
+<area shape="rect" id="Node000004" href="$bluesync__bitfields_8h.html" title=" " alt="" coords="171,79,304,105"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="139,29,206,68,203,73,137,34"/>
+<area shape="rect" id="Node000005" href="$src_2bluesync_8h.html" title=" " alt="" coords="191,153,274,178"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="239,105,237,137,232,137,234,105"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="204,181,104,222,102,218,202,176"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="141,226,324,252"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="235,179,235,211,230,211,230,179"/>
+</map>

@@ -1,0 +1,20 @@
+<map id="bs_scan_wait_for_sync_handler" name="bs_scan_wait_for_sync_handler">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,23,163,64"/>
+<area shape="rect" id="Node000002" href="$bluesync_8c.html#ac645e5a0d11afc2847855b7697f55c63" title=" " alt="" coords="211,5,362,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="163,31,195,27,196,32,163,36"/>
+<area shape="rect" id="Node000004" href="$bluesync_8c.html#a3281e1132ea7be337932f349e4dd0103" title=" " alt="" coords="216,55,356,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="163,50,201,55,200,60,163,55"/>
+<area shape="rect" id="Node000003" href="$bluesync_8c.html#ab62b52cc2c05b0b6f1d1fd6816b4f43c" title=" " alt="" coords="410,5,593,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="363,16,394,16,394,21,363,21"/>
+<area shape="rect" id="Node000005" href="$bluesync_8c.html#accff9034edc5962a24e70e68901a3ca8" title=" " alt="" coords="458,55,546,80"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="357,65,442,65,442,70,357,70"/>
+<area shape="rect" id="Node000006" href="$bluesync_8c.html#a5786970c5cd6649e57c988641e21c92b" title=" " alt="" coords="641,80,712,106"/>
+<area shape="poly" id="edge9_Node000004_Node000006" title=" " alt="" coords="341,78,410,90,526,95,626,93,626,99,526,101,410,95,340,84"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="547,71,626,83,626,88,546,77"/>
+<area shape="rect" id="Node000007" href="$bluesync_8c.html#ac1f14e07918b159fe1dc8277a7d2c14e" title=" " alt="" coords="760,80,913,106"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="712,90,744,90,744,96,712,96"/>
+<area shape="rect" id="Node000008" href="$local__time_8c.html#ae7531b3c0b2ca2aa533b2ebd223cb7a0" title="Get the logical time ticks value. This is the corrected ticks value after synchronisation...." alt="" coords="961,80,1111,106"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="913,90,945,90,945,96,913,96"/>
+<area shape="rect" id="Node000009" href="$local__time_8c.html#a3de0db4d23103b2a5c83f9b27b39cf85" title=" " alt="" coords="1159,80,1317,106"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="1112,90,1144,90,1144,96,1112,96"/>
+</map>

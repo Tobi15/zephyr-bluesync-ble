@@ -1,0 +1,13 @@
+<map id="synced_time_logger_new_msg" name="synced_time_logger_new_msg">
+<area shape="rect" id="Node000001" title=" " alt="" coords="942,5,1078,46"/>
+<area shape="rect" id="Node000002" href="$synced__time__logger_8c.html#a11d39f39b2a46eb250ca0b7b7e437748" title=" " alt="" coords="772,13,894,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="927,28,894,28,894,23,927,23"/>
+<area shape="rect" id="Node000003" href="$synced__time__logger_8c.html#ac60256ce352f8d3246b112015b649df1" title=" " alt="" coords="570,13,724,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="756,28,724,28,724,23,756,23"/>
+<area shape="rect" id="Node000004" href="$synced__time__logger_8c.html#ab86379527d06d3811d91761b6ae57c5c" title="Initialize the timer that store regularly timestamp of the node." alt="" coords="362,13,522,38"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="554,28,523,28,523,23,554,23"/>
+<area shape="rect" id="Node000005" href="$bluesync__statistic__bsim_8c.html#a931beb01090abe8ce0977b7c372647fa" title="Initialize the BlueSync statistics module." alt="" coords="165,13,314,38"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="347,28,315,28,315,23,347,23"/>
+<area shape="rect" id="Node000006" href="$bluesync__statistic__bsim_8c.html#a99077ac5ea85d459dc83388437f6ccd3" title=" " alt="" coords="5,13,117,38"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="149,28,117,28,117,23,149,23"/>
+</map>

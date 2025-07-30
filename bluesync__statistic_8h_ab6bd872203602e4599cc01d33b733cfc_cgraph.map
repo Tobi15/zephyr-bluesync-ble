@@ -1,0 +1,5 @@
+<map id="bluesync_statistic_deinit" name="bluesync_statistic_deinit">
+<area shape="rect" id="Node000001" title="Deinitialize the BlueSync statistics module." alt="" coords="5,5,131,46"/>
+<area shape="rect" id="Node000002" href="$synced__time__logger_8c.html#a8d589e20bde3d2e94562981a05470ceb" title="Deinitialize the timer that store regularly timestamp of the node." alt="" coords="179,5,315,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,23,163,23,163,28,131,28"/>
+</map>

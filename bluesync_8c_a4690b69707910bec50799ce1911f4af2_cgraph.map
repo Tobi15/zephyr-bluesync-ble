@@ -1,0 +1,5 @@
+<map id="bluesync_start_net_sync" name="bluesync_start_net_sync">
+<area shape="rect" id="Node000001" title="Initiates a new BlueSync synchronization round as the time authority." alt="" coords="5,5,170,31"/>
+<area shape="rect" id="Node000002" href="$bs__state__machine_8c.html#a8e7148a913121150be60bd92a69f3cbf" title="Get the node role." alt="" coords="218,5,398,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="170,16,202,16,202,21,170,21"/>
+</map>

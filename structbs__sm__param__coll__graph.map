@@ -1,0 +1,5 @@
+<map id="bs_sm_param" name="bs_sm_param">
+<area shape="rect" id="Node000001" title=" " alt="" coords="12,94,115,120"/>
+<area shape="rect" id="Node000002" href="$structbs__sm__handlers.html" title="Struct defining the callbacks of the state machine." alt="" coords="5,5,122,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="66,47,66,94,61,94,61,47"/>
+</map>

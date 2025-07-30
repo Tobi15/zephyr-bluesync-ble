@@ -1,0 +1,15 @@
+<map id="init_sync_overall_timer" name="init_sync_overall_timer">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,59,159,84"/>
+<area shape="rect" id="Node000002" href="$synced__time__logger_8c.html#a11d39f39b2a46eb250ca0b7b7e437748" title=" " alt="" coords="207,59,329,84"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,69,191,69,191,74,159,74"/>
+<area shape="rect" id="Node000003" href="$local__time_8c.html#a120ece7e147c0a90b3b973645f49af53" title="Get the current time which is based on the UNIX reference." alt="" coords="377,29,546,55"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="329,60,361,55,362,60,330,65"/>
+<area shape="rect" id="Node000007" href="$synced__time__logger_8c.html#a195e35968463d3bdabaaafe721b4b3ce" title=" " alt="" coords="394,79,530,120"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="330,78,379,85,378,90,329,83"/>
+<area shape="rect" id="Node000004" href="$local__time_8c.html#ae7531b3c0b2ca2aa533b2ebd223cb7a0" title="Get the logical time ticks value. This is the corrected ticks value after synchronisation...." alt="" coords="594,5,745,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="546,30,579,26,579,31,547,35"/>
+<area shape="rect" id="Node000006" href="$local__time_8c.html#af7710aa86c6ea2d5bd9fd438e9f318fe" title=" " alt="" coords="594,55,745,80"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="547,50,579,54,579,59,546,55"/>
+<area shape="rect" id="Node000005" href="$local__time_8c.html#a3de0db4d23103b2a5c83f9b27b39cf85" title=" " alt="" coords="793,5,950,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="745,16,777,16,777,21,745,21"/>
+</map>

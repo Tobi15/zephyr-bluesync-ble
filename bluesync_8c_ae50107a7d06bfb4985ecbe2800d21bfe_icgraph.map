@@ -1,0 +1,7 @@
+<map id="bluesync_init_adv" name="bluesync_init_adv">
+<area shape="rect" id="Node000001" title=" " alt="" coords="335,5,459,31"/>
+<area shape="rect" id="Node000002" href="$bluesync_8c.html#a21bfb7737b28b272a313aac9db321aaf" title=" " alt="" coords="150,5,287,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="320,21,287,21,287,16,320,16"/>
+<area shape="rect" id="Node000003" href="$bluesync_8c.html#a722991b2960886eaf99895ba3395176f" title="Initializes the BlueSync time synchronization module." alt="" coords="5,5,102,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="134,21,102,21,102,16,134,16"/>
+</map>
