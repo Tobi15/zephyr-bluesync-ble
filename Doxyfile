@@ -1,7 +1,6 @@
 OUTPUT_DIRECTORY = docs_output
 GENERATE_LATEX = NO
 RECURSIVE = YES
-INPUT = src include
 QUIET = YES
 OPTIMIZE_OUTPUT_FOR_C = YES
 
@@ -15,4 +14,11 @@ SHOW_USED_FILES         = YES
 SHOW_FILES              = YES
 SHOW_NAMESPACES         = NO
 GENERATE_TREEVIEW       = YES
+
+
+EXTRACT_ALL = YES
+EXTRACT_STATIC = YES
+INPUT             = src include
+FILE_PATTERNS     = *.c *.h
+SOURCE_BROWSER    = YES
 
