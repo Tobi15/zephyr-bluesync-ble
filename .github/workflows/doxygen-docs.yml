@@ -1,31 +1,21 @@
-name: Generate & Deploy Doxygen Docs
+name: Doxygen Action
 
 on:
   push:
     branches: [main]
 
-permissions:
-  contents: write
-
 jobs:
-  doxygen:
+  build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
-      - name: Install Doxygen
-        run: sudo apt-get install -y doxygen graphviz
-
-      - name: Create build/docs directory
-        run: mkdir -p build/docs
-
-      - name: Generate Doxygen Docs
-        run: doxygen Doxyfile
-
-      - name: Deploy to GitHub Pages
+      - uses: actions/checkout@v2
+      - name: Doxygen Action
+        uses: mattnotmitt/doxygen-action@v1.1.0
+        with:
+          doxyfile-path: "./Doxyfile"
+          working-directory: "."
+      - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build/docs/html
+          publish_dir: ./generated-docs/html
