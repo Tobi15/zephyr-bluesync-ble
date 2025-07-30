@@ -12,29 +12,29 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 📥 Checkout Repository
+      - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: 🛠 Install Dependencies (Doxygen + Python)
+      - name: Install Dependencies (Doxygen + Python)
         run: |
           sudo apt update
           sudo apt install -y doxygen graphviz
           pip install mkdocs mkdocs-material
           pip install kconfiglib
 
-      - name: 📚 Generate Doxygen Documentation
+      - name: Generate Doxygen Documentation
         run: |
           doxygen Doxyfile
           mkdir -p docs/api
           cp -r docs_output/html/* docs/api/
 
-      - name: 📚 Generate Kconfig md
+      - name: Generate Kconfig md
         run: python scripts/gen_kconfig_md.py zephyr/Kconfig --output docs/kconfig.md
 
-      - name: 🏗 Build MkDocs Site
+      - name: Build MkDocs Site
         run: mkdocs build
 
-      - name: 🚀 Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
