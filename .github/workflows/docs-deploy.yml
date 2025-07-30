@@ -20,12 +20,16 @@ jobs:
           sudo apt update
           sudo apt install -y doxygen graphviz
           pip install mkdocs mkdocs-material
+          pip install kconfiglib
 
       - name: 📚 Generate Doxygen Documentation
         run: |
           doxygen Doxyfile
           mkdir -p docs/api
           cp -r docs_output/html/* docs/api/
+
+      - name: 📚 Generate Kconfig md
+        run: python scripts/gen_kconfig_md.py zephyr/Kconfig --output docs/kconfig.md
 
       - name: 🏗 Build MkDocs Site
         run: mkdocs build
