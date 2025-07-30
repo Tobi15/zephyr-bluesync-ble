@@ -151,3 +151,9 @@ By submitting a pull request, you agree to license your contribution under Apach
 
 - Zephyr RTOS: https://zephyrproject.org/
 - Conventional Commits: https://www.conventionalcommits.org/
+
+
+## 📖 Documentation
+Detailed documentation is available in [`docs/`](./docs):
+- [Conception](docs/conception.md)
+- [Implementation](docs/implementation.md)
