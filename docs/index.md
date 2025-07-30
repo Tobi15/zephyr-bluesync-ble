@@ -20,6 +20,12 @@ This documentation describes the protocol design and implementation within the [
 
 ---
 
+## 🔍 API Documentation
+
+The full API reference generated with Doxygen is available here:
+
+👉 [View BlueSync API Docs](api/index.html)
+
 ## 📖 Reference
 
 This project is based on the following work:
