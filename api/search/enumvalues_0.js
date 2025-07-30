@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['bluesync_5fauthority_5frole_0',['BLUESYNC_AUTHORITY_ROLE',['../group__bluesync__api.html#ggab90d76e2e617bc596e11fe05aa0b310baec375b3206ba429a0bec529a70b5da0a',1,'bluesync.h']]],
+  ['bluesync_5fbuf_5fwrong_5fsize_1',['BLUESYNC_BUF_WRONG_SIZE',['../src_2bluesync_8h.html#a17ea68732589c685ea84dd62dd615ce6a4c074eb5d936487d42fd47dc59640e91',1,'bluesync.h']]],
+  ['bluesync_5fbusy_5fstatus_2',['BLUESYNC_BUSY_STATUS',['../src_2bluesync_8h.html#a17ea68732589c685ea84dd62dd615ce6a2ee2a77ba69c72d8f3c2d0f735853212',1,'bluesync.h']]],
+  ['bluesync_5fclient_5frole_3',['BLUESYNC_CLIENT_ROLE',['../group__bluesync__api.html#ggab90d76e2e617bc596e11fe05aa0b310ba70989cd36253d204270feb42c8fdaa09',1,'bluesync.h']]],
+  ['bluesync_5fdenominator_5ftoo_5fsmall_4',['BLUESYNC_DENOMINATOR_TOO_SMALL',['../src_2bluesync_8h.html#a17ea68732589c685ea84dd62dd615ce6ad7ce2c880fa17d3d2b285a98fc47461a',1,'bluesync.h']]],
+  ['bluesync_5finvalid_5fparam_5fstatus_5',['BLUESYNC_INVALID_PARAM_STATUS',['../src_2bluesync_8h.html#a17ea68732589c685ea84dd62dd615ce6a3d74d3b8be40b55f2112712eb62a1b1e',1,'bluesync.h']]],
+  ['bluesync_5fno_5fenough_5fdata_5fstatus_6',['BLUESYNC_NO_ENOUGH_DATA_STATUS',['../src_2bluesync_8h.html#a17ea68732589c685ea84dd62dd615ce6a76f13fc52e1ef1a3c676878ae9cc78c4',1,'bluesync.h']]],
+  ['bluesync_5fno_5fvalid_5fdata_5fstatus_7',['BLUESYNC_NO_VALID_DATA_STATUS',['../src_2bluesync_8h.html#a17ea68732589c685ea84dd62dd615ce6a97724cdbb941a95aaff725c49f33578c',1,'bluesync.h']]],
+  ['bluesync_5fnone_5frole_8',['BLUESYNC_NONE_ROLE',['../group__bluesync__api.html#ggab90d76e2e617bc596e11fe05aa0b310ba91d7888de37627e71c6a743f1a8ba021',1,'bluesync.h']]],
+  ['bluesync_5fsuccess_5fstatus_9',['BLUESYNC_SUCCESS_STATUS',['../src_2bluesync_8h.html#a17ea68732589c685ea84dd62dd615ce6ac2f6724c9bd84bebdbed56f2680541e7',1,'bluesync.h']]],
+  ['bluesync_5ftimeout_5fstatus_10',['BLUESYNC_TIMEOUT_STATUS',['../src_2bluesync_8h.html#a17ea68732589c685ea84dd62dd615ce6a0c2b9907204b96cc92d80062b0e1c6cb',1,'bluesync.h']]],
+  ['bs_5fadv_11',['BS_ADV',['../bs__state__machine_8h.html#aac656b0e5c1b3a6d281a970ddd6019b6a9523e0b00c3b0f5bfa846c17c72e9232',1,'bs_state_machine.h']]],
+  ['bs_5fcount_12',['BS_COUNT',['../bs__state__machine_8h.html#aac656b0e5c1b3a6d281a970ddd6019b6a05f2bf6174a6ca99ccf879f471bf4c80',1,'bs_state_machine.h']]],
+  ['bs_5fnone_5fstate_13',['BS_NONE_STATE',['../bs__state__machine_8h.html#aac656b0e5c1b3a6d281a970ddd6019b6ae91a47bbb1e6603307a86affee17a985',1,'bs_state_machine.h']]],
+  ['bs_5fscan_5fwait_5ffor_5fsync_14',['BS_SCAN_WAIT_FOR_SYNC',['../bs__state__machine_8h.html#aac656b0e5c1b3a6d281a970ddd6019b6a3d080a62fecbb1e807534189806245d0',1,'bs_state_machine.h']]],
+  ['bs_5fstop_15',['BS_STOP',['../bs__state__machine_8h.html#aac656b0e5c1b3a6d281a970ddd6019b6adc3ea2dedac5fb7f9bf47a7fe242e17a',1,'bs_state_machine.h']]],
+  ['bs_5fsync_16',['BS_SYNC',['../bs__state__machine_8h.html#aac656b0e5c1b3a6d281a970ddd6019b6afe597ad8a833e8a0390e3f268123c23a',1,'bs_state_machine.h']]],
+  ['bs_5fupdate_17',['BS_UPDATE',['../bs__state__machine_8h.html#aac656b0e5c1b3a6d281a970ddd6019b6ab7d19f620ef1a78629833a425cfbbb27',1,'bs_state_machine.h']]]
+];

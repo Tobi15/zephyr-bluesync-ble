@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('bluesync__bitfields_8h_source.html',''
   <div class="headertitle"><div class="title">bluesync_bitfields.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
+<a href="bluesync__bitfields_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * Copyright 2025 Tobias Moullet</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> *</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> * Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span></div>
@@ -124,23 +124,29 @@ $(document).ready(function(){initNavTree('bluesync__bitfields_8h_source.html',''
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#ifndef ZEPHYR_BLUESYNC_SRC_BLUESYNC_BITFIELDS_H_</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#define ZEPHYR_BLUESYNC_SRC_BLUESYNC_BITFIELDS_H_</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &quot;bluesync.h&quot;</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &quot;<a class="code" href="src_2bluesync_8h.html">bluesync.h</a>&quot;</span></div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keywordtype">bool</span> is_bit_set(uint8_t *bitfield, <span class="keywordtype">size_t</span> bit_index);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keywordtype">bool</span> <a class="code hl_function" href="bluesync__bitfields_8h.html#aad862c7d519b57cfd824981a104ec796">is_bit_set</a>(uint8_t *bitfield, <span class="keywordtype">size_t</span> bit_index);</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keywordtype">void</span> set_bit(uint8_t *bitfield, <span class="keywordtype">size_t</span> bit_index);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keywordtype">void</span> <a class="code hl_function" href="bluesync__bitfields_8h.html#a835ad1bade618a08ef4ca2a30d8fc470">set_bit</a>(uint8_t *bitfield, <span class="keywordtype">size_t</span> bit_index);</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="keywordtype">void</span> bitwise_and_bitfields(uint8_t *result, <span class="keyword">const</span> <a class="code hl_struct" href="structbluesync__timestamps__t.html">bluesync_timestamps_t</a> *rcv, <span class="keyword">const</span> <a class="code hl_struct" href="structbluesync__timestamps__t.html">bluesync_timestamps_t</a> *local, <span class="keywordtype">size_t</span> num_bytes);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="keywordtype">void</span> <a class="code hl_function" href="bluesync__bitfields_8h.html#a4b4ea7003ba767e26c5baa3a0cfd790e">bitwise_and_bitfields</a>(uint8_t *result, <span class="keyword">const</span> <a class="code hl_struct" href="structbluesync__timestamps__t.html">bluesync_timestamps_t</a> *rcv, <span class="keyword">const</span> <a class="code hl_struct" href="structbluesync__timestamps__t.html">bluesync_timestamps_t</a> *<a class="code hl_variable" href="local__time_8c.html#aebe0d3778275cefebe36f5d35011bd93">local</a>, <span class="keywordtype">size_t</span> num_bytes);</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="keywordtype">size_t</span> count_set_bits(uint8_t *bitfield, <span class="keywordtype">size_t</span> num_bytes);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="keywordtype">size_t</span> <a class="code hl_function" href="bluesync__bitfields_8h.html#a6d3f8ecbc895265798a4a84701880779">count_set_bits</a>(uint8_t *bitfield, <span class="keywordtype">size_t</span> num_bytes);</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="preprocessor">#endif </span><span class="comment">/* ZEPHYR_BLUESYNC_SRC_BLUESYNC_BITFIELDS_H_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="astructbluesync__timestamps__t_html"><div class="ttname"><a href="structbluesync__timestamps__t.html">bluesync_timestamps_t</a></div><div class="ttdef"><b>Definition</b> bluesync.h:50</div></div>
+<div class="ttc" id="abluesync__bitfields_8h_html_a4b4ea7003ba767e26c5baa3a0cfd790e"><div class="ttname"><a href="bluesync__bitfields_8h.html#a4b4ea7003ba767e26c5baa3a0cfd790e">bitwise_and_bitfields</a></div><div class="ttdeci">void bitwise_and_bitfields(uint8_t *result, const bluesync_timestamps_t *rcv, const bluesync_timestamps_t *local, size_t num_bytes)</div><div class="ttdoc">Perform a bitwise AND between two bitfields and store the result.</div><div class="ttdef"><b>Definition</b> <a href="bluesync__bitfields_8c_source.html#l00045">bluesync_bitfields.c:45</a></div></div>
+<div class="ttc" id="abluesync__bitfields_8h_html_a6d3f8ecbc895265798a4a84701880779"><div class="ttname"><a href="bluesync__bitfields_8h.html#a6d3f8ecbc895265798a4a84701880779">count_set_bits</a></div><div class="ttdeci">size_t count_set_bits(uint8_t *bitfield, size_t num_bytes)</div><div class="ttdoc">Count the number of bits set to 1 in a bitfield.</div><div class="ttdef"><b>Definition</b> <a href="bluesync__bitfields_8c_source.html#l00068">bluesync_bitfields.c:68</a></div></div>
+<div class="ttc" id="abluesync__bitfields_8h_html_a835ad1bade618a08ef4ca2a30d8fc470"><div class="ttname"><a href="bluesync__bitfields_8h.html#a835ad1bade618a08ef4ca2a30d8fc470">set_bit</a></div><div class="ttdeci">void set_bit(uint8_t *bitfield, size_t bit_index)</div><div class="ttdoc">Set a specific bit in the bitfield.</div><div class="ttdef"><b>Definition</b> <a href="bluesync__bitfields_8c_source.html#l00037">bluesync_bitfields.c:37</a></div></div>
+<div class="ttc" id="abluesync__bitfields_8h_html_aad862c7d519b57cfd824981a104ec796"><div class="ttname"><a href="bluesync__bitfields_8h.html#aad862c7d519b57cfd824981a104ec796">is_bit_set</a></div><div class="ttdeci">bool is_bit_set(uint8_t *bitfield, size_t bit_index)</div><div class="ttdoc">Check if a specific bit is set in the bitfield.</div><div class="ttdef"><b>Definition</b> <a href="bluesync__bitfields_8c_source.html#l00041">bluesync_bitfields.c:41</a></div></div>
+<div class="ttc" id="alocal__time_8c_html_aebe0d3778275cefebe36f5d35011bd93"><div class="ttname"><a href="local__time_8c.html#aebe0d3778275cefebe36f5d35011bd93">local</a></div><div class="ttdeci">static struct local_time local</div><div class="ttdef"><b>Definition</b> <a href="local__time_8c_source.html#l00053">local_time.c:53</a></div></div>
+<div class="ttc" id="asrc_2bluesync_8h_html"><div class="ttname"><a href="src_2bluesync_8h.html">bluesync.h</a></div></div>
+<div class="ttc" id="astructbluesync__timestamps__t_html"><div class="ttname"><a href="structbluesync__timestamps__t.html">bluesync_timestamps_t</a></div><div class="ttdef"><b>Definition</b> <a href="src_2bluesync_8h_source.html#l00050">bluesync.h:50</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><b>bluesync_bitfields.h</b></li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="bluesync__bitfields_8h.html">bluesync_bitfields.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

@@ -113,17 +113,50 @@ Collaboration diagram for bluesync_msg_client:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a6d3cd38da9a928c0bfea7553fd417ee9" id="r_a6d3cd38da9a928c0bfea7553fd417ee9"><td class="memItemLeft" align="right" valign="top"><a id="a6d3cd38da9a928c0bfea7553fd417ee9" name="a6d3cd38da9a928c0bfea7553fd417ee9"></a>
-struct <a class="el" href="structbluesync__msg.html">bluesync_msg</a>&#160;</td><td class="memItemRight" valign="bottom"><b>rcv</b></td></tr>
+<tr class="memitem:a6d3cd38da9a928c0bfea7553fd417ee9" id="r_a6d3cd38da9a928c0bfea7553fd417ee9"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structbluesync__msg.html">bluesync_msg</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbluesync__msg__client.html#a6d3cd38da9a928c0bfea7553fd417ee9">rcv</a></td></tr>
 <tr class="separator:a6d3cd38da9a928c0bfea7553fd417ee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a101e364425ab333ca8fe0a03714f220b" id="r_a101e364425ab333ca8fe0a03714f220b"><td class="memItemLeft" align="right" valign="top"><a id="a101e364425ab333ca8fe0a03714f220b" name="a101e364425ab333ca8fe0a03714f220b"></a>
-uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>client_timer_ticks</b></td></tr>
+<tr class="memitem:a101e364425ab333ca8fe0a03714f220b" id="r_a101e364425ab333ca8fe0a03714f220b"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbluesync__msg__client.html#a101e364425ab333ca8fe0a03714f220b">client_timer_ticks</a></td></tr>
 <tr class="separator:a101e364425ab333ca8fe0a03714f220b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Encapsulated BlueSync message received by the client during synchronization. </p>
 <p>This structure wraps the original message received from the master and adds the client's own timing information. It is used by the client to compute synchronization parameters (e.g., offset and drift) during a sync round. </p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+
+<p class="definition">Definition at line <a class="el" href="src_2bluesync_8h_source.html#l00124">124</a> of file <a class="el" href="src_2bluesync_8h_source.html">bluesync.h</a>.</p>
+</div><h2 class="groupheader">Field Documentation</h2>
+<a id="a101e364425ab333ca8fe0a03714f220b" name="a101e364425ab333ca8fe0a03714f220b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a101e364425ab333ca8fe0a03714f220b">&#9670;&#160;</a></span>client_timer_ticks</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t bluesync_msg_client::client_timer_ticks</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="src_2bluesync_8h_source.html#l00126">126</a> of file <a class="el" href="src_2bluesync_8h_source.html">bluesync.h</a>.</p>
+
+</div>
+</div>
+<a id="a6d3cd38da9a928c0bfea7553fd417ee9" name="a6d3cd38da9a928c0bfea7553fd417ee9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d3cd38da9a928c0bfea7553fd417ee9">&#9670;&#160;</a></span>rcv</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structbluesync__msg.html">bluesync_msg</a> bluesync_msg_client::rcv</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="src_2bluesync_8h_source.html#l00125">125</a> of file <a class="el" href="src_2bluesync_8h_source.html">bluesync.h</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li>src/<a class="el" href="src_2bluesync_8h_source.html">bluesync.h</a></li>
 </ul>
 </div><!-- contents -->

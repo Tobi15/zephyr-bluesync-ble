@@ -1,0 +1,18 @@
+<map id="src/bs_state_machine.c" name="src/bs_state_machine.c">
+<area shape="rect" id="Node000001" title=" " alt="" coords="133,5,307,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="88,225,211,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,33,70,53,38,66,18,80,9,99,10,118,18,137,33,156,73,190,115,216,112,221,69,194,29,159,14,140,5,119,4,98,14,77,35,61,68,48,148,28"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="28,79,183,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="203,33,137,74,134,69,200,28"/>
+<area shape="rect" id="Node000004" href="$include_2bluesync_2bluesync_8h.html" title="Public API for the BlueSync time synchronization module." alt="" coords="89,152,244,177"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="220,32,197,105,181,141,176,139,192,103,214,30"/>
+<area shape="rect" id="Node000005" href="$src_2bluesync_8h.html" title=" " alt="" coords="277,152,369,177"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="231,30,309,139,304,142,226,33"/>
+<area shape="rect" id="Node000007" href="$bs__state__machine_8h.html" title=" " alt="" coords="308,79,460,104"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="247,28,346,71,344,76,245,33"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="166,178,158,213,153,212,161,177"/>
+<area shape="poly" id="edge6_Node000005_Node000002" title=" " alt="" coords="296,180,191,222,189,218,294,175"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="235,225,445,251"/>
+<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="328,177,337,212,331,213,323,178"/>
+<area shape="poly" id="edge9_Node000007_Node000005" title=" " alt="" coords="376,106,344,143,340,140,372,103"/>
+</map>
