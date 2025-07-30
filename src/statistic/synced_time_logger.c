@@ -33,7 +33,6 @@
 
 #include <bluesync/bluesync.h>
 
-//#include "../../../../../bluesync/local_time.h"
 
 LOG_MODULE_REGISTER(synced_time_logger, CONFIG_APP_LOG_LEVEL);
 

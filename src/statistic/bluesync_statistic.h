@@ -49,7 +49,7 @@ void bluesync_statistic_init();
 /**
  * @brief Deinitialize the BlueSync statistics module.
  *
- * This function cleans up and close files 
+ * This function cleans up and close files
  */
 void  bluesync_statistic_deinit();
 
