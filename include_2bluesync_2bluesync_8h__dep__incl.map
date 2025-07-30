@@ -1,9 +1,0 @@
-<map id="include/bluesync/bluesync.h" name="include/bluesync/bluesync.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="122,5,305,31"/>
-<area shape="rect" id="Node000002" href="$bluesync_8c.html" title=" " alt="" coords="5,86,110,112"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="177,41,83,88,80,84,175,36"/>
-<area shape="rect" id="Node000003" href="$bs__state__machine_8c.html" title=" " alt="" coords="134,86,293,112"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="216,47,216,86,211,86,211,47"/>
-<area shape="rect" id="Node000004" href="$synced__time__logger_8c.html" title=" " alt="" coords="317,79,451,120"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="255,35,343,76,340,81,252,40"/>
-</map>

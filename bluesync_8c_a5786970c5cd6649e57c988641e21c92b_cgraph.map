@@ -1,9 +1,0 @@
-<map id="scan_cb" name="scan_cb">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,76,31"/>
-<area shape="rect" id="Node000002" href="$bluesync_8c.html#ac1f14e07918b159fe1dc8277a7d2c14e" title=" " alt="" coords="124,5,277,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="76,16,108,16,108,21,76,21"/>
-<area shape="rect" id="Node000003" href="$local__time_8c.html#ae7531b3c0b2ca2aa533b2ebd223cb7a0" title="Get the logical time ticks value. This is the corrected ticks value after synchronisation...." alt="" coords="325,5,475,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="277,16,309,16,309,21,277,21"/>
-<area shape="rect" id="Node000004" href="$local__time_8c.html#a3de0db4d23103b2a5c83f9b27b39cf85" title=" " alt="" coords="523,5,681,31"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="476,16,508,16,508,21,476,21"/>
-</map>

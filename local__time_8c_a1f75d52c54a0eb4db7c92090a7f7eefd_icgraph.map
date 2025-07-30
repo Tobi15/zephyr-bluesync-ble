@@ -1,7 +1,0 @@
-<map id="apply_timer_sync" name="apply_timer_sync">
-<area shape="rect" id="Node000001" title="Apply the synchronisation parameters. Once the LR is made, The result of it gives a drift value (slop..." alt="" coords="414,5,535,31"/>
-<area shape="rect" id="Node000002" href="$bluesync_8c.html#aeca8c130ac37b793356125ef9ceebc22" title=" " alt="" coords="184,5,366,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="399,21,367,21,367,16,399,16"/>
-<area shape="rect" id="Node000003" href="$bluesync_8c.html#a5e07e4c09110ee0eb81c51b0551a3101" title=" " alt="" coords="5,5,136,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="168,21,136,21,136,16,168,16"/>
-</map>

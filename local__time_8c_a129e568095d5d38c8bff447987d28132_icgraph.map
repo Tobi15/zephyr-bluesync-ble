@@ -1,5 +1,0 @@
-<map id="set_new_epoch_unix_ref" name="set_new_epoch_unix_ref">
-<area shape="rect" id="Node000001" title="Set the new epoch unix ref value. Before the authority node starts a new network synchronisation,..." alt="" coords="233,13,397,38"/>
-<area shape="rect" id="Node000002" href="$bluesync_8c.html#a523e1397bf700b1ab25182c0db4017c6" title="Initiates a new BlueSync synchronization round as the time authority." alt="" coords="5,5,185,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="217,28,185,28,185,23,217,23"/>
-</map>

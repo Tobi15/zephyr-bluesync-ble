@@ -9,20 +9,22 @@
       
       
       
+        <link rel="prev" href="..">
       
-        <link rel="next" href="conception/">
+      
+        <link rel="next" href="../implementation/">
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
     
     
       
-        <title>BlueSync Documentation - BlueSync Documentation</title>
+        <title>Conception - BlueSync Documentation</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e37652d.min.css">
       
       
 
@@ -41,7 +43,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -60,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#bluesync-for-zephyr-rtos" class="md-skip">
+        <a href="#conception-of-bluesync-in-zephyr-rtos" class="md-skip">
           Skip to content
         </a>
       
@@ -76,7 +78,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="BlueSync Documentation" class="md-header__button md-logo" aria-label="BlueSync Documentation" data-md-component="logo">
+    <a href=".." title="BlueSync Documentation" class="md-header__button md-logo" aria-label="BlueSync Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -96,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              BlueSync Documentation
+              Conception
             
           </span>
         </div>
@@ -174,7 +176,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="BlueSync Documentation" class="md-nav__button md-logo" aria-label="BlueSync Documentation" data-md-component="logo">
+    <a href=".." title="BlueSync Documentation" class="md-nav__button md-logo" aria-label="BlueSync Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -184,6 +186,28 @@
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
     
       
       
@@ -206,7 +230,7 @@
   
   
   <span class="md-ellipsis">
-    Home
+    Conception
     
   </span>
   
@@ -214,12 +238,12 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="." class="md-nav__link md-nav__link--active">
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
-    Home
+    Conception
     
   </span>
   
@@ -242,27 +266,69 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#documentation-sections" class="md-nav__link">
+  <a href="#objectives" class="md-nav__link">
     <span class="md-ellipsis">
-      📚 Documentation Sections
+      Objectives
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#api-documentation" class="md-nav__link">
+  <a href="#key-design-principles" class="md-nav__link">
     <span class="md-ellipsis">
-      🔍 API Documentation
+      Key Design Principles
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#reference" class="md-nav__link">
+  <a href="#bluesync-packet-format" class="md-nav__link">
     <span class="md-ellipsis">
-      📖 Reference
+      BlueSync Packet Format
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#state-machine-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      State Machine Overview
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="State Machine Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#authority-node-gateway" class="md-nav__link">
+    <span class="md-ellipsis">
+      Authority Node (Gateway)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#client-node-sensor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Client Node (Sensor)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#synchronization-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Synchronization Flow
     </span>
   </a>
   
@@ -283,29 +349,7 @@
   
   
     <li class="md-nav__item">
-      <a href="conception/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Conception
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="implementation/" class="md-nav__link">
+      <a href="../implementation/" class="md-nav__link">
         
   
   
@@ -327,7 +371,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api/" class="md-nav__link">
+      <a href="../api/" class="md-nav__link">
         
   
   
@@ -369,27 +413,69 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#documentation-sections" class="md-nav__link">
+  <a href="#objectives" class="md-nav__link">
     <span class="md-ellipsis">
-      📚 Documentation Sections
+      Objectives
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#api-documentation" class="md-nav__link">
+  <a href="#key-design-principles" class="md-nav__link">
     <span class="md-ellipsis">
-      🔍 API Documentation
+      Key Design Principles
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#reference" class="md-nav__link">
+  <a href="#bluesync-packet-format" class="md-nav__link">
     <span class="md-ellipsis">
-      📖 Reference
+      BlueSync Packet Format
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#state-machine-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      State Machine Overview
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="State Machine Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#authority-node-gateway" class="md-nav__link">
+    <span class="md-ellipsis">
+      Authority Node (Gateway)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#client-node-sensor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Client Node (Sensor)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#synchronization-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Synchronization Flow
     </span>
   </a>
   
@@ -411,42 +497,101 @@
 
 
 
-<h1 id="bluesync-for-zephyr-rtos">BlueSync for Zephyr RTOS</h1>
-<p><strong>BlueSync</strong> is a lightweight and energy-efficient time synchronization protocol designed for Bluetooth Low Energy (BLE) Mesh networks.<br />
-It enables accurate, multi-hop synchronization in resource-constrained environments such as linear sensor networks deployed in tunnels or industrial facilities.</p>
-<p>This documentation describes the protocol design and implementation within the <a href="https://zephyrproject.org/">Zephyr RTOS</a> framework.</p>
-<h2 id="documentation-sections">📚 Documentation Sections</h2>
+<h1 id="conception-of-bluesync-in-zephyr-rtos">Conception of BlueSync in Zephyr RTOS</h1>
+<p>The design of BlueSync in Zephyr RTOS was driven by the need for an efficient, scalable, and accurate time synchronization protocol tailored to the constraints of BLE Mesh in linear sensor deployments (e.g., tunnels).</p>
+<h2 id="objectives">Objectives</h2>
+<ul>
+<li>Achieve <strong>microsecond-level</strong> synchronization accuracy over BLE Mesh.</li>
+<li>Support <strong>low-power, resource-constrained</strong> devices.</li>
+<li>Use <strong>BLE Extended Advertising</strong> for long-range, non-connectable broadcasts.</li>
+<li>Enable <strong>multi-hop time propagation</strong> across a linear network.</li>
+<li>Integrate seamlessly with <strong>Zephyr RTOS modules</strong> and drivers.</li>
+</ul>
+<h2 id="key-design-principles">Key Design Principles</h2>
 <ul>
 <li>
-<p><a href="conception/">🧠 Conception</a>:<br />
-  Learn about the motivation, architecture, packet format, and state machines that form the foundation of BlueSync.</p>
+<p><strong>Centralized Authority Node</strong><br />
+  A gateway node with NTP or GPS access serves as the synchronization anchor.</p>
 </li>
 <li>
-<p><a href="implementation/">🛠 Implementation</a>:<br />
-  Dive into the technical details of how BlueSync is integrated with Zephyr, including BLE usage, timestamping, drift correction, and more.</p>
+<p><strong>One-Way Sync</strong><br />
+  Clients passively receive extended advertisements carrying timestamps.</p>
+</li>
+<li>
+<p><strong>Precise Hardware Timestamping</strong><br />
+  Clients use hardware timers (e.g., RTC, TIMER2) to timestamp sync packet arrival.</p>
+</li>
+<li>
+<p><strong>Linear Regression Drift Correction</strong><br />
+  Clock offset and drift are estimated using linear regression over multiple timestamp pairs.</p>
+</li>
+<li>
+<p><strong>Chained Multi-Hop Propagation</strong><br />
+  Downstream nodes receive re-broadcasted sync packets and synchronize in turn.</p>
 </li>
 </ul>
+<h2 id="bluesync-packet-format">BlueSync Packet Format</h2>
+<p><img alt="Packet Format" src="../images/packet_format.png" /></p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Size</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>round_id</code></td>
+<td>1 byte</td>
+<td>ID for the sync round, incremented by Authority</td>
+</tr>
+<tr>
+<td><code>slot_idx</code></td>
+<td>1 byte</td>
+<td>Optional slot index (can be used for future use)</td>
+</tr>
+<tr>
+<td><code>timestamp</code></td>
+<td>8 bytes</td>
+<td>Master time in microseconds (Unix epoch)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="state-machine-overview">State Machine Overview</h2>
+<p><img alt="State Machine" src="../images/state_machine_bluesync.png" /></p>
+<h3 id="authority-node-gateway">Authority Node (Gateway)</h3>
+<ul>
+<li><code>STOP</code>: Initial idle state.</li>
+<li><code>ADV</code>: Starts a sync round, increments <code>round_id</code>, advertises a burst of sync packets, returns to <code>STOP</code>.</li>
+</ul>
+<h3 id="client-node-sensor">Client Node (Sensor)</h3>
+<ul>
+<li><code>SCAN_WAIT_FOR_SYNC</code>: Listens for sync packets.</li>
+<li><code>SYNC</code>: Collects timestamp pairs.</li>
+<li><code>UPDATE</code>: Computes and applies clock correction using regression.</li>
+<li><code>ADV</code>: Optionally rebroadcasts sync packet; returns to <code>SCAN_WAIT_FOR_SYNC</code>.</li>
+</ul>
+<h2 id="synchronization-flow">Synchronization Flow</h2>
+<ol>
+<li>Authority broadcasts sync message with timestamp.</li>
+<li>Clients timestamp the reception and store local/master pairs.</li>
+<li>After receiving N messages, clients estimate slope and offset.</li>
+<li>Logical time is corrected using:</li>
+</ol>
+<pre><code>logical_time(t) = slope * local_time(t) + offset
+</code></pre>
+<ol>
+<li>Clients forward sync message to downstream nodes.</li>
+<li>The process repeats down the linear topology.</li>
+</ol>
 <hr />
-<h2 id="api-documentation">🔍 API Documentation</h2>
-<p>The full API reference generated with Doxygen is available here:</p>
-<p>👉 <a href="api/">View BlueSync API Docs</a></p>
-<h2 id="reference">📖 Reference</h2>
-<p>This project is based on the following work:</p>
-<blockquote>
-<p>A. A. Ghosh and R. Sridhar, "<strong>BlueSync: BLE-Based Time Synchronization Using Broadcast Advertisements</strong>", <em>2021 IEEE 5th World Forum on Internet of Things (WF-IoT)</em>, pp. 52–57, 2021.<br />
-DOI: <a href="https://doi.org/10.1109/WF-IoT51360.2021.9555832">10.1109/WF-IoT51360.2021.9555832</a></p>
-</blockquote>
-<hr />
-<p><em>This project is developed and maintained by <a href="https://github.com/Tobi15">@Tobi15</a>.</em></p>
 
 
 
 
 
 
-
-  
-  
 
 
 
@@ -489,10 +634,10 @@ DOI: <a href="https://doi.org/10.1109/WF-IoT51360.2021.9555832">10.1109/WF-IoT51
     
     
       
-      <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.50899def.min.js"></script>
+      <script src="../assets/javascripts/bundle.50899def.min.js"></script>
       
     
   </body>

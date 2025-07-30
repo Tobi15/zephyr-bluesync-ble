@@ -1,5 +1,0 @@
-<map id="get_logical_time_us" name="get_logical_time_us">
-<area shape="rect" id="Node000001" title="Get the logical time us value. This is the corrected us value after synchronisation...." alt="" coords="5,5,142,31"/>
-<area shape="rect" id="Node000002" href="$local__time_8c.html#a3de0db4d23103b2a5c83f9b27b39cf85" title=" " alt="" coords="190,5,347,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="142,16,174,16,174,21,142,21"/>
-</map>

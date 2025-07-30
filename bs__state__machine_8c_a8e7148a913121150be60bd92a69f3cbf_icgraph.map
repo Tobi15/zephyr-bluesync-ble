@@ -1,8 +1,0 @@
-<map id="bs_state_machine_get_role" name="bs_state_machine_get_role">
-<area shape="rect" id="Node000001" title="Get the node role." alt="" coords="445,31,625,56"/>
-<area shape="rect" id="Node000002" href="$bluesync_8c.html#a4690b69707910bec50799ce1911f4af2" title="Initiates a new BlueSync synchronization round as the time authority." alt="" coords="233,5,397,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="429,34,397,30,398,25,430,29"/>
-<area shape="rect" id="Node000003" href="$bluesync_8c.html#a523e1397bf700b1ab25182c0db4017c6" title="Initiates a new BlueSync synchronization round as the time authority." alt="" coords="5,23,185,64"/>
-<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="430,46,185,46,185,41,430,41"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="217,32,185,36,185,30,216,27"/>
-</map>
