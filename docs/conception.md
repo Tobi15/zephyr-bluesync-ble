@@ -29,6 +29,8 @@ The design of BlueSync in Zephyr RTOS was driven by the need for an efficient, s
 
 ## BlueSync Packet Format
 
+![Packet Format](images/time_sync-packet_foramt.png)
+
 | Field         | Size   | Description                                      |
 |--------------|--------|--------------------------------------------------|
 | `round_id`   | 1 byte | ID for the sync round, incremented by Authority |
@@ -36,6 +38,8 @@ The design of BlueSync in Zephyr RTOS was driven by the need for an efficient, s
 | `timestamp`  | 8 bytes| Master time in microseconds (Unix epoch)        |
 
 ## State Machine Overview
+
+![State Machine](images/state_machine_bluesync.png)
 
 ### Authority Node (Gateway)
 
