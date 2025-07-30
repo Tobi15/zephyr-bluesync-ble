@@ -25,6 +25,11 @@ This documentation describes the protocol design and implementation within the [
 The full API reference generated with Doxygen is available here:
 
 [View BlueSync API Docs](api/index.html)
+
+## Kconfig Options
+
+All the KConfig Options are available here:
+
 [View BlueSync KConfig Docs](kconfig.md)
 
 ## Reference
