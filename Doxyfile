@@ -1,5 +1,5 @@
 PROJECT_NAME           = "BlueSync"
-OUTPUT_DIRECTORY       = docs/api
+OUTPUT_DIRECTORY       = build/docs
 HTML_OUTPUT            = .
 INPUT                  = ./src ./include ./docs
 RECURSIVE              = YES
