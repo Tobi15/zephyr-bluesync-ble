@@ -1,0 +1,7 @@
+site_name: BlueSync Documentation
+theme: material
+nav:
+  - Home: index.md
+  - Conception: conception.md
+  - Implementation: implementation.md
+  - API Reference: api/index.html
