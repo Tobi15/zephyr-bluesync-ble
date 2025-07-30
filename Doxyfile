@@ -3,8 +3,10 @@ GENERATE_LATEX = NO
 RECURSIVE = YES
 INPUT = src include
 QUIET = YES
+OPTIMIZE_OUTPUT_FOR_C = YES
 
 PROJECT_NAME           = "BlueSync - BLE Time Sync for Zephyr"
 PROJECT_BRIEF          = "High-precision time synchronization for BLE Mesh networks"
 
 HTML_TITLE             = "BlueSync API Documentation"
+
