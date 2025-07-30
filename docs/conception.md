@@ -29,7 +29,7 @@ The design of BlueSync in Zephyr RTOS was driven by the need for an efficient, s
 
 ## BlueSync Packet Format
 
-![Packet Format](images/time_sync-packet_foramt.png)
+![Packet Format](images/packet_format.png)
 
 | Field         | Size   | Description                                      |
 |--------------|--------|--------------------------------------------------|
