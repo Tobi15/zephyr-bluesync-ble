@@ -10,6 +10,14 @@ In order to use this synchronization with BLE Mesh, you must use this Zephyr rep
 
 ---
 
+## Reference
+
+This project is based on the following work:
+
+> A. A. Ghosh and R. Sridhar, "**BlueSync: BLE-Based Time Synchronization Using Broadcast Advertisements**", *2021 IEEE 5th World Forum on Internet of Things (WF-IoT)*, pp. 52–57, 2021.  
+> DOI: [10.1109/WF-IoT51360.2021.9555832](https://doi.org/10.1109/WF-IoT51360.2021.9555832)
+
+
 ## ✨ Features
 
 - ⏱️ **Precise logical time tracking** with slope/offset correction  

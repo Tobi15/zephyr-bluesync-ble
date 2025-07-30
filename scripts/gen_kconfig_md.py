@@ -1,11 +1,10 @@
 import argparse
 from pathlib import Path
-import re
 
 def parse_kconfig_file(kconfig_path: Path) -> list:
     entries = []
     current_entry = None
-    help_text = []
+    help_lines = []
     inside_help = False
 
     with kconfig_path.open("r", encoding="utf-8") as f:
@@ -14,16 +13,16 @@ def parse_kconfig_file(kconfig_path: Path) -> list:
 
             if stripped.startswith("config "):
                 if current_entry:
-                    current_entry["help"] = "\n".join(help_text).strip()
+                    current_entry["help"] = "\n".join(help_lines).strip()
                     entries.append(current_entry)
 
                 current_entry = {
-                    "name": stripped.split(" ")[1],
+                    "name": stripped.split(" ", 1)[1],
                     "type": None,
                     "default": None,
-                    "help": None
+                    "help": ""
                 }
-                help_text = []
+                help_lines = []
                 inside_help = False
 
             elif current_entry:
@@ -34,15 +33,14 @@ def parse_kconfig_file(kconfig_path: Path) -> list:
                 elif stripped == "help":
                     inside_help = True
                 elif inside_help:
-                    if line.startswith(" "):  # help lines must be indented
-                        help_text.append(stripped)
+                    if line.startswith(" "):  # Only indented lines count as help
+                        help_lines.append(stripped)
                     else:
                         inside_help = False
 
-        # Append last entry
-        if current_entry:
-            current_entry["help"] = "\n".join(help_text).strip()
-            entries.append(current_entry)
+    if current_entry:
+        current_entry["help"] = "\n".join(help_lines).strip()
+        entries.append(current_entry)
 
     return entries
 
@@ -54,26 +52,26 @@ def write_markdown(entries: list, output_path: Path):
 
         for entry in entries:
             f.write(f"## `{entry['name']}`\n\n")
-            if entry["help"]:
+            if entry['help']:
                 f.write(f"{entry['help']}\n\n")
             f.write(f"- **Type**: `{entry['type'] or 'unspecified'}`\n")
             if entry["default"]:
                 f.write(f"- **Default**: `{entry['default']}`\n")
             f.write("\n---\n\n")
 
-    print(f"✅ Markdown generated at: {output_path}")
+    print(f"Markdown generated: {output_path}")
 
 def main():
-    parser = argparse.ArgumentParser(description="Simple Kconfig to Markdown converter")
+    parser = argparse.ArgumentParser(description="Generate Markdown from standalone Kconfig")
     parser.add_argument("kconfig_path", help="Path to the standalone Kconfig file")
-    parser.add_argument("--output", default="docs/KCONFIG.md", help="Output .md file (default: docs/KCONFIG.md)")
+    parser.add_argument("--output", default="docs/KCONFIG.md", help="Output Markdown file (default: docs/KCONFIG.md)")
     args = parser.parse_args()
 
     kconfig_file = Path(args.kconfig_path)
     output_file = Path(args.output)
 
     if not kconfig_file.exists():
-        print(f"❌ Error: {kconfig_file} not found.")
+        print(f"Error: Kconfig file not found: {kconfig_file}")
         return
 
     entries = parse_kconfig_file(kconfig_file)
