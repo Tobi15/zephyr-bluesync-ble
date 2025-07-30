@@ -10,3 +10,9 @@ PROJECT_BRIEF          = "High-precision time synchronization for BLE Mesh netwo
 
 HTML_TITLE             = "BlueSync API Documentation"
 
+
+SHOW_USED_FILES         = YES
+SHOW_FILES              = YES
+SHOW_NAMESPACES         = NO
+GENERATE_TREEVIEW       = YES
+
