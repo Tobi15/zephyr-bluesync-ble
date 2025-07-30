@@ -4,5 +4,5 @@ nav:
   - Home: index.md
   - Conception: conception.md
   - Implementation: implementation.md
-  - API Reference: api/index.html
+  - API Reference: api/group__bluesync__api.html
   - Kconfig Options: kconfig.md
