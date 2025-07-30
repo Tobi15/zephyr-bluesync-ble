@@ -589,10 +589,10 @@
 </ul>
 <h3 id="client-node-sensor">Client Node (Sensor)</h3>
 <ul>
-<li><code>SCAN_WAIT_FOR_SYNC</code>: Listens for sync packets.</li>
-<li><code>SYNC</code>: Collects timestamp pairs.</li>
-<li><code>UPDATE</code>: Computes and applies clock correction using regression.</li>
-<li><code>ADV</code>: Optionally rebroadcasts sync packet; returns to <code>SCAN_WAIT_FOR_SYNC</code>.</li>
+<li><code>SCAN_WAIT_FOR_SYNC</code>: Listens for a burst of sync packets.</li>
+<li><code>SYNC</code>: Collects sync packets of the burst.</li>
+<li><code>UPDATE</code>: Computes and applies clock correction using regression linear.</li>
+<li><code>ADV</code>: Rebroadcasts the burst of sync packets; returns to <code>SCAN_WAIT_FOR_SYNC</code>.</li>
 </ul>
 <h2 id="synchronization-flow">Synchronization Flow</h2>
 <ol>
