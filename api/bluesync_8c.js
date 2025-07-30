@@ -5,7 +5,7 @@ var bluesync_8c =
     [ "BLUESYNC_BT_SCAN_INT", "bluesync_8c.html#ad9c05005983ef020bd49ba6b86ffa981", null ],
     [ "BLUESYNC_BT_SCAN_WIND_SIZE", "bluesync_8c.html#aebf0e9557f0e953d60cac646e4b1db9b", null ],
     [ "BT_UNIT_MS_TO_TICKS", "bluesync_8c.html#a20bf64c160d13cfc7f8369160b1d9cb9", null ],
-    [ "add_bluesync_timestamps", "bluesync_8c.html#a73d14c438328054c5c14b084b3befe54", null ],
+    [ "add_bluesync_timestamps", "bluesync_8c.html#ace82f797cf59e8b3eab9bb7406c3372a", null ],
     [ "adv_sent_cb", "bluesync_8c.html#a53cf47753502eeef3bd5a7e9753dc877", null ],
     [ "bluesync_adv_process", "bluesync_8c.html#a9f8da33a076ee25b6c18d4085dd2d35e", null ],
     [ "bluesync_decode_msg", "bluesync_8c.html#ac1f14e07918b159fe1dc8277a7d2c14e", null ],
