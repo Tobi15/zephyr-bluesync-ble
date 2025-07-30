@@ -48,10 +48,10 @@ The design of BlueSync in Zephyr RTOS was driven by the need for an efficient, s
 
 ### Client Node (Sensor)
 
-- `SCAN_WAIT_FOR_SYNC`: Listens for sync packets.
-- `SYNC`: Collects timestamp pairs.
-- `UPDATE`: Computes and applies clock correction using regression.
-- `ADV`: Optionally rebroadcasts sync packet; returns to `SCAN_WAIT_FOR_SYNC`.
+- `SCAN_WAIT_FOR_SYNC`: Listens for a burst of sync packets.
+- `SYNC`: Collects sync packets of the burst.
+- `UPDATE`: Computes and applies clock correction using regression linear.
+- `ADV`: Rebroadcasts the burst of sync packets; returns to `SCAN_WAIT_FOR_SYNC`.
 
 ## Synchronization Flow
 
