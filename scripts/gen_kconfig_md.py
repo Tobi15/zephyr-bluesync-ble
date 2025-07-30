@@ -19,6 +19,7 @@ def parse_kconfig_file(kconfig_path: Path) -> list:
                 current_entry = {
                     "name": stripped.split(" ", 1)[1],
                     "type": None,
+                    "title": None,
                     "default": None,
                     "help": ""
                 }
@@ -26,8 +27,11 @@ def parse_kconfig_file(kconfig_path: Path) -> list:
                 inside_help = False
 
             elif current_entry:
-                if stripped.startswith(("bool", "int", "hex", "string", "tristate")):
-                    current_entry["type"] = stripped
+                tokens = stripped.split(maxsplit=1)
+                if tokens and tokens[0] in ("bool", "int", "hex", "string", "tristate"):
+                    current_entry["type"] = tokens[0]
+                    if len(tokens) > 1:
+                        current_entry["title"] = tokens[1].strip('"')
                 elif stripped.startswith("default "):
                     current_entry["default"] = stripped.replace("default", "").strip()
                 elif stripped == "help":
@@ -52,6 +56,10 @@ def write_markdown(entries: list, output_path: Path):
 
         for entry in entries:
             f.write(f"## `{entry['name']}`\n\n")
+            # Title from type line
+            if entry["title"]:
+                f.write(f"{entry['title']}\n\n")
+            # Help text
             if entry['help']:
                 f.write(f"{entry['help']}\n\n")
             f.write(f"- **Type**: `{entry['type'] or 'unspecified'}`\n")

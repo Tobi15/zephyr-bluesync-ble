@@ -5,3 +5,4 @@ nav:
   - Conception: conception.md
   - Implementation: implementation.md
   - API Reference: api/index.html
+  - Kconfig Options: kconfig.md
