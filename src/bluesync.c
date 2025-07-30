@@ -111,11 +111,11 @@ static void reset_bluesync_timestamps(bluesync_timestamps_t *elem){
 	memset(&elem->timer_ticks, 0, sizeof(elem->timer_ticks));
 }
 
-static void add_bluesync_timestamps(bluesync_timestamps_t *elem,
-									uint8_t pos, 
-									int64_t ticks, 
+static void add_bluesync_timestamps(bluesync_timestamps_t *elem
+									,uint8_t pos 
+									,int64_t ticks 
 #if defined(CONFIG_BLUESYNC_TEST_BABBLESIM_SUPPORT)
-									uint64_t est_ticks
+									,uint64_t est_ticks
 #endif
 									)
 {
@@ -215,7 +215,9 @@ static void bluesync_decode_msg(struct bluesync_msg_client *msg, struct net_buf_
 	msg->rcv.round_id = net_buf_simple_pull_u8(buf);
 	msg->rcv.index_timeslot = net_buf_simple_pull_u8(buf);
 	msg->rcv.master_timer_ticks = net_buf_simple_pull_le64(buf);
+#if defined(CONFIG_BLUESYNC_TEST_BABBLESIM_SUPPORT)
 	msg->master_estimation_ticks = get_logical_time_ticks();
+#endif
 }
 
 static void bluesync_store_current_burst(){
