@@ -9,6 +9,8 @@
       
       
       
+        <link rel="prev" href="../api/">
+      
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -271,6 +273,151 @@
   
 
     
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Kconfig Options
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kconfig Options
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#bluesync_support" class="md-nav__link">
+    <span class="md-ellipsis">
+      BLUESYNC_SUPPORT
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bluesync_used_in_mesh" class="md-nav__link">
+    <span class="md-ellipsis">
+      BLUESYNC_USED_IN_MESH
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bluesync_thread_stack_size" class="md-nav__link">
+    <span class="md-ellipsis">
+      BLUESYNC_THREAD_STACK_SIZE
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bluesync_thread_priority" class="md-nav__link">
+    <span class="md-ellipsis">
+      BLUESYNC_THREAD_PRIORITY
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bluesync_adv_int_ms" class="md-nav__link">
+    <span class="md-ellipsis">
+      BLUESYNC_ADV_INT_MS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bluesync_slots_in_burst" class="md-nav__link">
+    <span class="md-ellipsis">
+      BLUESYNC_SLOTS_IN_BURST
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bluesync_burst_windows_size" class="md-nav__link">
+    <span class="md-ellipsis">
+      BLUESYNC_BURST_WINDOWS_SIZE
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bluesync_test_babblesim_support" class="md-nav__link">
+    <span class="md-ellipsis">
+      BLUESYNC_TEST_BABBLESIM_SUPPORT
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bluesync_test_babblesim_path" class="md-nav__link">
+    <span class="md-ellipsis">
+      BLUESYNC_TEST_BABBLESIM_PATH
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -396,56 +543,65 @@
 
 <h1 id="kconfig-options">Kconfig Options</h1>
 <h2 id="bluesync_support"><code>BLUESYNC_SUPPORT</code></h2>
+<p>BlueSync support</p>
 <ul>
-<li><strong>Type</strong>: <code>bool "BlueSync support"</code></li>
+<li><strong>Type</strong>: <code>bool</code></li>
 <li><strong>Default</strong>: <code>n</code></li>
 </ul>
 <hr />
 <h2 id="bluesync_used_in_mesh"><code>BLUESYNC_USED_IN_MESH</code></h2>
+<p>Use BlueSync in BLE Mesh mode</p>
 <ul>
-<li><strong>Type</strong>: <code>bool "Use BlueSync in BLE Mesh mode"</code></li>
+<li><strong>Type</strong>: <code>bool</code></li>
 <li><strong>Default</strong>: <code>y</code></li>
 </ul>
 <hr />
 <h2 id="bluesync_thread_stack_size"><code>BLUESYNC_THREAD_STACK_SIZE</code></h2>
+<p>BlueSync thread stack size</p>
 <ul>
-<li><strong>Type</strong>: <code>hex "BlueSync thread stack size"</code></li>
+<li><strong>Type</strong>: <code>hex</code></li>
 <li><strong>Default</strong>: <code>0x800</code></li>
 </ul>
 <hr />
 <h2 id="bluesync_thread_priority"><code>BLUESYNC_THREAD_PRIORITY</code></h2>
+<p>BlueSync thread priority</p>
 <ul>
-<li><strong>Type</strong>: <code>int "BlueSync thread priority"</code></li>
+<li><strong>Type</strong>: <code>int</code></li>
 <li><strong>Default</strong>: <code>5</code></li>
 </ul>
 <hr />
 <h2 id="bluesync_adv_int_ms"><code>BLUESYNC_ADV_INT_MS</code></h2>
+<p>Burst packet interval (ms)</p>
 <ul>
-<li><strong>Type</strong>: <code>int "Burst packet interval (ms)"</code></li>
+<li><strong>Type</strong>: <code>int</code></li>
 <li><strong>Default</strong>: <code>200</code></li>
 </ul>
 <hr />
 <h2 id="bluesync_slots_in_burst"><code>BLUESYNC_SLOTS_IN_BURST</code></h2>
+<p>Timeslots per burst</p>
 <ul>
-<li><strong>Type</strong>: <code>int "Timeslots per burst"</code></li>
+<li><strong>Type</strong>: <code>int</code></li>
 <li><strong>Default</strong>: <code>16</code></li>
 </ul>
 <hr />
 <h2 id="bluesync_burst_windows_size"><code>BLUESYNC_BURST_WINDOWS_SIZE</code></h2>
+<p>Number of bursts used for regression</p>
 <ul>
-<li><strong>Type</strong>: <code>int "Number of bursts used for regression"</code></li>
+<li><strong>Type</strong>: <code>int</code></li>
 <li><strong>Default</strong>: <code>4</code></li>
 </ul>
 <hr />
 <h2 id="bluesync_test_babblesim_support"><code>BLUESYNC_TEST_BABBLESIM_SUPPORT</code></h2>
+<p>Enable BabbleSim support</p>
 <ul>
-<li><strong>Type</strong>: <code>bool "Enable BabbleSim support"</code></li>
+<li><strong>Type</strong>: <code>bool</code></li>
 <li><strong>Default</strong>: <code>n</code></li>
 </ul>
 <hr />
 <h2 id="bluesync_test_babblesim_path"><code>BLUESYNC_TEST_BABBLESIM_PATH</code></h2>
+<p>Path of the babblesim output file</p>
 <ul>
-<li><strong>Type</strong>: <code>string "Path of the babblesim output file"</code></li>
+<li><strong>Type</strong>: <code>string</code></li>
 </ul>
 <hr />
 
