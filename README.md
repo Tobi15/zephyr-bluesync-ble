@@ -31,22 +31,29 @@ This project is based on the following work:
 ## 📁 Directory Structure
 
 ```
-zephyr-bluesync/
+zephyr-bluesync-ble/
 ├── include/              # Public API headers
 │   └── bluesync/
 │       └── bluesync.h
 ├── src/                  # Core source files
-|   ├── statistic/            # Optional BabbleSim support
-│   |   └── statistic.c
+│   ├── statistic/            # Optional BabbleSim support
+│   │   │── bluesync_statistic.h
+│   │   │── bluesync_statistic_bsim.h
+│   │   │── bluesync_statistic_bsim.c
+│   │   │── synced_time_logger.h
+│   │   └── synced_time_logger.c
+│   ├── bluesync.h
 │   ├── bluesync.c
+│   ├── local_time.h
 │   ├── local_time.c
+│   ├── bs_state_machine.h
 │   ├── bs_state_machine.c
-│   ├── bluesync_bitfields.c
-│   └── ...
+│   ├── bluesync_bitfields.h
+│   └── bluesync_bitfields.c
 ├── zephyr/
+│   ├── module.yml
 │   └── Kconfig           # Configuration options
 ├── CMakeLists.txt
-├── module.yml
 ├── LICENSE
 └── NOTICE
 ```
